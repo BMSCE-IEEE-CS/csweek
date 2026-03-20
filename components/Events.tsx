@@ -205,7 +205,7 @@ export function SectionHeader({
         className="font-black"
         style={{
           fontFamily: "'Orbitron',sans-serif",
-          fontSize: "clamp(2rem,6vw,4.5rem)",
+          fontSize: "clamp(1.5rem,4.5vw,3.5rem)",
           background: "linear-gradient(135deg,#8B6914,#FFD700,#C8960C)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
