@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const BASE_URL = "https://csweek.bmsceieeecs.in";
+
 export const metadata: Metadata = {
   title: {
     default: "CS Week 2026 | BMSCE IEEE Computer Society",
     template: "%s | CS Week 2026",
   },
   description:
-    "CS Week 2026 is BMSCE IEEE Computer Society  's celebrations of 80 years of IEEE Computer Society with a Codeathon, Cryptic Treasure Hunt, Multi-Club Collaborations, and a 24-Hour Hackathon. March 30 - April 5, 2026.",
+    "CS Week 2026 is BMSCE IEEE Computer Society's celebration of 80 years of IEEE Computer Society — with a Codeathon, Cryptic Treasure Hunt, Multi-Club Collaborations, and a 24-Hour Hackathon. March 30 - April 5, 2026.",
   keywords: [
     "CS Week 2026",
     "BMSCE",
@@ -27,21 +29,21 @@ export const metadata: Metadata = {
   authors: [{ name: "BMSCE IEEE Computer Society" }],
   creator: "BMSCE IEEE Computer Society",
   publisher: "BMSCE IEEE Computer Society",
-  metadataBase: new URL("https://csweek.bmsceieeecs.in"),
+  metadataBase: new URL(BASE_URL),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "CS Week 2026 | BMSCE IEEE Computer Society",
     description:
-      "Join us for CS Week 2026 - celebrating 80 years of IEEE Computer Society. Codeathon · Cryptic Hunt · Collabs · 24HR Hackathon. March 30 - April 5, 2026 at BMSCE, Bengaluru.",
+      "Join us for CS Week 2026 — celebrating 80 years of IEEE Computer Society. Codeathon · Cryptic Hunt · Collabs · 24HR Hackathon. March 30 - April 5, 2026 at BMSCE, Bengaluru.",
     type: "website",
-    url: "https://csweek.bmsceieeecs.in",
+    url: BASE_URL,
     siteName: "CS Week 2026",
     locale: "en_IN",
     images: [
       {
-        url: "/hero.png",
+        url: `${BASE_URL}/hero.png`, // ← absolute URL
         width: 1200,
         height: 630,
         alt: "CS Week 2026 | BMSCE IEEE Computer Society",
@@ -54,7 +56,7 @@ export const metadata: Metadata = {
     title: "CS Week 2026 | BMSCE IEEE Computer Society",
     description:
       "Codeathon · Cryptic Hunt · Collabs · 24HR Hackathon. March 30 - April 5, 2026 at BMSCE, Bengaluru.",
-    images: ["/hero.png"],
+    images: [`${BASE_URL}/hero.png`], // ← absolute URL
   },
   robots: {
     index: true,
