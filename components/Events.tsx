@@ -27,6 +27,7 @@ const events = [
     color: "#FFD700",
     status: "ONLINE",
     register: true,
+    registerUrl: "https://forms.gle/tWwETsR5GgzDGQhw9",
     accentBg: "rgba(255,140,66,0.04)",
   },
   {
@@ -42,6 +43,7 @@ const events = [
     color: "#C8960C",
     status: "ONLINE",
     register: true,
+    registerUrl: "#",
     accentBg: "rgba(255,140,66,0.04)",
   },
   {
@@ -80,6 +82,7 @@ const events = [
     color: "#FFD700",
     status: "IN-PERSON",
     register: true,
+    registerUrl: "#",
     highlight: true,
     accentBg: "rgba(255,140,66,0.04)",
   },
@@ -454,7 +457,7 @@ function EventCard({
               display: "flex",
               flexWrap: "wrap",
               gap: "0.4rem",
-              marginBottom: event.register ? "1rem" : 0,
+              marginBottom: event.register && event.registerUrl ? "1rem" : 0,
             }}
           >
             {event.tags.map((tag) => (
@@ -473,28 +476,35 @@ function EventCard({
               </span>
             ))}
           </div>
-          {event.register && (
-            <motion.button
+          {event.register && event.registerUrl && (
+            <motion.a
+              href={event.registerUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ opacity: 0.85 }}
               whileTap={{ scale: 0.97 }}
               style={{
                 width: wide ? "180px" : "100%",
                 padding: "10px 0",
                 border: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "0.5rem",
                 fontFamily: "'Orbitron',sans-serif",
                 fontSize: "clamp(0.75rem,1.5vw,0.85rem)",
                 fontWeight: 900,
                 letterSpacing: "0.08em",
                 background: `linear-gradient(135deg,${event.color}99,${event.color})`,
                 color: "#080808",
+                textDecoration: "none",
                 cursor: "pointer",
                 clipPath:
                   "polygon(9px 0%,100% 0%,calc(100% - 9px) 100%,0% 100%)",
               }}
-              className="inline-flex items-center gap-2 justify-center"
             >
               REGISTER <FaAnglesRight />
-            </motion.button>
+            </motion.a>
           )}
         </div>
       </div>

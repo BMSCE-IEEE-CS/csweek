@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: `${BASE_URL}/hero.png`, // ← absolute URL
+        url: `${BASE_URL}/hero.png`,
         width: 1200,
         height: 630,
         alt: "CS Week 2026 | BMSCE IEEE Computer Society",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "CS Week 2026 | BMSCE IEEE Computer Society",
     description:
       "Codeathon · Cryptic Hunt · Collabs · 24HR Hackathon. March 30 - April 5, 2026 at BMSCE, Bengaluru.",
-    images: [`${BASE_URL}/hero.png`], // ← absolute URL
+    images: [`${BASE_URL}/hero.png`],
   },
   robots: {
     index: true,
