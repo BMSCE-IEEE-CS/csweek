@@ -43,7 +43,7 @@ const events = [
     color: "#C8960C",
     status: "ONLINE",
     register: true,
-    registerUrl: "#",
+    registerUrl: "https://forms.gle/nhYY3WkDhyNkyzSh9",
     accentBg: "rgba(255,140,66,0.04)",
   },
   {

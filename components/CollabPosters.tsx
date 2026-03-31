@@ -22,7 +22,7 @@ const posters = [
     date: "APR 4, 10:00 AM - 1:00 PM",
     color: "#A78BFA",
     registerUrl: "https://forms.gle/AuGjSjjtnum3VSKM8",
-    imageUrl: "/images/twin-sight.jpg",
+    imageUrl: "/posters/augmentai.jpeg",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const posters = [
     date: "APR 4, 10:00 AM - 2:00 PM",
     color: "#F59E0B",
     registerUrl: "https://forms.gle/4uHNiVoB4ksJRjjD9",
-    imageUrl: "/images/hertz-to-hyperlink.jpg",
+    imageUrl: "/posters/aps.jpeg",
   },
   {
     id: 3,
