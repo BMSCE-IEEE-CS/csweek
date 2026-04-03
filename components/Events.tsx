@@ -82,7 +82,8 @@ const events = [
     color: "#FFD700",
     status: "IN-PERSON",
     register: true,
-    registerUrl: "https://forms.gle/vihXjkStJdtJQpL99",
+    registerUrl: "https://synthverse-hackathon.vercel.app/",
+    buttonLabel: "VISIT WEBSITE",
     highlight: true,
     accentBg: "rgba(255,140,66,0.04)",
   },
@@ -91,6 +92,7 @@ const events = [
 export type EventType = (typeof events)[0] & {
   accentBg?: string;
   glowColor?: string;
+  buttonLabel?: string;
 };
 
 export default function Events() {
@@ -503,7 +505,7 @@ function EventCard({
                   "polygon(9px 0%,100% 0%,calc(100% - 9px) 100%,0% 100%)",
               }}
             >
-              REGISTER <FaAnglesRight />
+              {event.buttonLabel || "REGISTER"} <FaAnglesRight />
             </motion.a>
           )}
         </div>

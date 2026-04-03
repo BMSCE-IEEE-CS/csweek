@@ -23,7 +23,11 @@ const eventLinks = [
   { label: "Codeathon", href: "#events" },
   { label: "Cryptic Hunt", href: "#events" },
   { label: "Collab Events", href: "#events" },
-  { label: "Hackathon", href: "#events" },
+  {
+    label: "Hackathon",
+    href: "https://synthverse-hackathon.vercel.app/",
+    external: true,
+  },
 ];
 
 export default function Footer() {
@@ -261,6 +265,8 @@ export default function Footer() {
                   <a
                     key={link.label}
                     href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     style={{
                       fontFamily: "'Share Tech Mono',monospace",
                       fontSize: "11px",
