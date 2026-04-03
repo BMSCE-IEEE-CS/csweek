@@ -17,6 +17,7 @@ const navLinks = [
   { label: "HOME", href: "#hero" },
   { label: "EVENTS", href: "#events" },
   { label: "COLLABS", href: "#collabs" },
+  { label: "HACKATHON", href: "/synthverse" },
   { label: "TIMELINE", href: "#timeline" },
   { label: "ABOUT", href: "#about" },
 ];
