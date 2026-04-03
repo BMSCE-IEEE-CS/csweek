@@ -82,7 +82,7 @@ const events = [
     color: "#FFD700",
     status: "IN-PERSON",
     register: true,
-    registerUrl: "https://synthverse-hackathon.vercel.app/",
+    registerUrl: "/synthverse",
     buttonLabel: "VISIT WEBSITE",
     highlight: true,
     accentBg: "rgba(255,140,66,0.04)",

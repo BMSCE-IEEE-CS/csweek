@@ -25,7 +25,7 @@ const eventLinks = [
   { label: "Collab Events", href: "#events" },
   {
     label: "Hackathon",
-    href: "https://synthverse-hackathon.vercel.app/",
+    href: "/synthverse",
     external: true,
   },
 ];
